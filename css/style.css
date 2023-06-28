@@ -36,6 +36,7 @@ body  nav{
                 list-style: none;
                 display: inline;
                 margin-right: 8px;
+                
                 } 
                 nav ul li a {
                         text-decoration: none;
@@ -43,7 +44,10 @@ body  nav{
                         font-size: 1.4em;
                         }
                         
-
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+}
 .b100 {
      width: 100%;
 }
@@ -53,10 +57,12 @@ body  nav{
     color: rgb(156, 62, 156);
 }
 
-body h2{
+body h2 {
     text-align: center;
     background-color: rgb(156, 62, 156);
     color: aliceblue;
+    font-size: 1.5em;
+    margin: 0;
 }
 
 .inicio{
@@ -142,7 +148,10 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
+.bg-purple {
+    background-color: #9c3e9c;
+    color: white ;
+}
 .manga img{
     width: 350px;
     height: 491.75px;

@@ -15,6 +15,10 @@ body{
     width: 150px;
 }
 
+.iconoH{
+    width: 65px;
+}
+
 .center{
     display: flex;
     flex-direction: column;
@@ -437,4 +441,22 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center; 
+}
+
+@media (min-width:320px) and (max-width:992px){
+    .none{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        }
+}
+
+@media (min-width:993px) and (max-width:2200px){
+    .noneH{
+        display: none;
+    }
 }

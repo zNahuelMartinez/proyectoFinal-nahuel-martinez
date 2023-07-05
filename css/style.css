@@ -53,7 +53,7 @@ ul{
     padding-left: 0;
 }
 .banner100 {
-     width: 100%;
+     width:100%;
 }
 
 body h2 {
@@ -455,7 +455,7 @@ footer {
 }
 
 /* laptop */
-@media(max-width:1024px){
+@media(max-width:1200px){
 
     .iconoLaptop{
         width: 120px;
@@ -498,6 +498,17 @@ footer {
         justify-content: center;
         width: 100%;
         }
+
+    .mapaForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sizeFormMapTablet{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 
 }
 

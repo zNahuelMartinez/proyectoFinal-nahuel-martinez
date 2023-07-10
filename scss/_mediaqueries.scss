@@ -173,6 +173,16 @@
         align-items: center;
     }
 
+    .imgNosotros{
+        padding: 15px 100px;
+    }
+
+}
+
+@media (max-width:767px) {
+    .imgNosotros{
+        padding: 0px;
+    }
 }
 
 /* celulares */

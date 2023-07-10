@@ -566,6 +566,14 @@ body h2 {
     flex-direction: column;
     align-items: center;
   }
+  .imgNosotros {
+    padding: 15px 100px;
+  }
+}
+@media (max-width: 767px) {
+  .imgNosotros {
+    padding: 0px;
+  }
 }
 /* celulares */
 @media (max-width: 400px) and (min-width: 320px) {

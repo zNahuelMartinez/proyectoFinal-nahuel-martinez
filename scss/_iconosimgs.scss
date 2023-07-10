@@ -1,0 +1,47 @@
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .icons form {
+        display: flex;
+        align-items: center;
+    }
+    
+    .icons input{
+        margin: 0 5px;
+        padding: 6px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(243, 245, 245);
+    }
+
+    .icons button{
+        margin: 0 5px;
+        background-color: rgb(156, 62, 156);
+        padding: 6px;
+        border: none;
+        border-radius: 3px;
+    }
+
+    .iconsG{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 30% 30% 30% ;
+        grid-template-rows: 160px;
+        grid-template-areas: 
+        "buscar icono carrito"
+    }
+
+.buscarG{
+    grid-area: buscar;
+}
+
+.iconoG{
+    grid-area: icono;
+}
+
+.carritoG{
+    grid-area: carrito;
+}

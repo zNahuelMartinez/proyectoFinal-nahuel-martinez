@@ -1,0 +1,28 @@
+footer {
+    background-color: rgb(156, 62, 156);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    footer .svg {
+        padding: 6px;
+        width: 40px;
+        height: 40px;
+    } 
+
+    footer ul{
+        list-style: none;
+        padding:0 10px;
+        margin: 10px 0;
+    }
+
+    footer ul li a{
+        color: rgb(255, 255, 255);
+        font-size: 0.9em;
+        text-decoration: none;
+    }
+
+    footer a{
+        text-decoration: none;
+    }

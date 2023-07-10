@@ -1,0 +1,16 @@
+{
+  "name": "nahuel",
+  "version": "1.0.0",
+  "description": "Link del repositorio : https://github.com/zNahuelMartinez/preEntrega-nahuel-martinez.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/main.scss  css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.63.6"
+  }
+}

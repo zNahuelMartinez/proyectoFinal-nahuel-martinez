@@ -1,0 +1,184 @@
+
+/* pantalla 4k */
+@media (max-width:2560px) and (min-width:993px){
+    .noneH{
+        display: none;
+    }
+}
+
+/* laptop L */
+@media(max-width:1440px){
+    .inicio{
+        width: 400px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        border-radius: 15px;
+        
+    }
+    .inicio:hover{
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
+
+    .ropa figure{
+        width: 30%;
+        padding-left: 0px;
+    }
+
+    .ropa figure img{
+        width: 330px;
+        height: 330px;
+    }
+    .ropa figure button{
+        margin-left: 20px;
+    }
+
+    .ropa figure figcaption, .ropa figure p{
+        margin-left: 15px;
+    }
+
+    .manga figure{
+        width: 30%;
+    }
+
+    .manga img{
+        width: 240px;
+        height: 335px;
+    }
+}
+
+/* laptop "chica"*/
+@media(max-width:1200px){
+
+    .iconoLaptop{
+        width: 120px;
+    }
+
+    .inicio{
+        width: 320px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        border-radius: 15px;
+        
+    }
+    .inicio:hover{
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
+
+    .instaFoto{
+        width: 220px;
+    }
+    
+    .ropa figure{
+        width: 30%;
+        padding-left: 0px;
+    }
+
+    .ropa figure img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .imgSize{
+        margin-right: 10px;
+    }
+
+    .ropa figure button,.manga figure button{
+        font-size: 0.8em;
+        width: 90%;
+    }
+
+    .ropa figure figcaption, .ropa figure p{
+        margin-left: 22px;
+        font-size: 1em;
+    }
+
+    .manga img{
+        width: 190px;
+        height: 265px;
+    }
+    
+    .manga figure figcaption, .manga figure h4{
+        margin-left: 0;
+        font-size: 1em;
+
+    }
+}
+
+/* menos que laptop (tablet) */
+@media(max-width:992px){
+    .none{
+        display: none;
+    }
+
+    /* INICIO */
+    .inicio{
+        width: 400px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        border-radius: 15px;
+        
+    }
+    .centerLinksIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        }
+
+    /* FORMULARIO */
+    .mapaForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sizeFormMapTablet{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    /* ROPA Y MANGA */
+    .tienda2 .filters, .tienda .filters{
+        padding-left: 12px;
+        padding-right: 5px;
+    }
+
+    .ropa figure{
+        width: 45%;
+        padding-left: 0px;
+    }
+
+    .ropa figure button{
+        margin-left: 18px;
+    }
+
+    .imgSize{
+        margin-right: 10px;
+    }
+
+    .manga figure{
+        width: 45%;
+    }
+
+    .tienda .filters{
+        padding-left: 5px;
+    }
+
+    /* NOSOTROS */
+    .imgArriba{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* celulares */
+@media(max-width:400px) and (min-width:320px){
+    .inicio{
+        width: 300px;
+        
+    }
+}

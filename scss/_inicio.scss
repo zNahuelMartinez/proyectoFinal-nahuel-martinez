@@ -1,0 +1,43 @@
+.icono {
+    width: 150px;
+}
+
+.iconoH{
+    width: 65px;
+}
+
+.banner100 {
+     width:100%;
+}
+
+body h2 {
+    text-align: center;
+    background-color: rgb(156, 62, 156);
+    color: aliceblue;
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.inicio{
+    width: 500px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+    .inicio:hover{
+        transform: scale(1.2);
+    }
+
+.p{
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.centerLinksIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}

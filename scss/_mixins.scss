@@ -1,0 +1,10 @@
+@mixin button ($bgColor,$color,$size,$fontSize,$borderRa,$padd){
+    border: none;
+            background-color:$bgColor;
+            color:$color;
+            width:$size;
+            font-size:$fontSize;
+            border-radius:$borderRa;
+            padding:$padd;
+}
+

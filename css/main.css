@@ -16,9 +16,6 @@ body {
   align-items: center;
   font-weight: 600;
 }
-.center:hover {
-  color: white;
-}
 
 body nav {
   background-color: #d4d0f5;
@@ -34,7 +31,7 @@ body nav li {
 }
 body nav li a {
   text-decoration: none;
-  color: black;
+  color: #1d1d1d;
   font-size: 1.4em;
 }
 
@@ -44,7 +41,7 @@ ul {
 }
 
 footer {
-  background-color: rgb(156, 62, 156);
+  background-color: #9c3e9c;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,8 +57,8 @@ footer ul {
   margin: 10px 0;
 }
 footer ul li a {
-  color: rgb(255, 255, 255);
-  font-size: 0.9em;
+  color: #f8f8f8;
+  font-size: 1em;
   text-decoration: none;
 }
 footer a {
@@ -82,11 +79,11 @@ footer a {
   padding: 6px;
   border-radius: 10px;
   border: none;
-  background-color: rgb(243, 245, 245);
+  background-color: #f8f8f8;
 }
 .icons button {
   margin: 0 5px;
-  background-color: rgb(156, 62, 156);
+  background-color: #9c3e9c;
   padding: 6px;
   border: none;
   border-radius: 3px;
@@ -126,8 +123,8 @@ footer a {
 
 body h2 {
   text-align: center;
-  background-color: rgb(156, 62, 156);
-  color: aliceblue;
+  background-color: #9c3e9c;
+  color: #f8f8f8;
   font-size: 1.4em;
   margin: 0;
 }
@@ -170,8 +167,17 @@ body h2 {
 }
 
 .bg-purple {
+  border: none;
   background-color: #9c3e9c;
-  color: white;
+  color: #f8f8f8;
+  width: 90%;
+  font-size: 1em;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 0.3s;
+}
+.bg-purple:hover {
+  transform: scale(1.1);
 }
 
 .manga figure {
@@ -186,13 +192,13 @@ body h2 {
   padding: 20px;
 }
 .manga figure img {
-  width: 350px;
-  height: 491.75px;
+  width: 300px;
+  height: 415px;
 }
 .manga figure button {
   border: none;
-  background-color: rgb(156, 62, 156);
-  color: white;
+  background-color: #9c3e9c;
+  color: #f8f8f8;
   width: 80%;
   font-size: 1em;
   border-radius: 10px;
@@ -203,7 +209,7 @@ body h2 {
   transform: scale(1.1);
 }
 .manga figure figcaption {
-  color: rgb(44, 42, 44);
+  color: #1d1d1d 44, 42, 44;
   font-size: 1.4em;
   padding: 10px 0;
 }
@@ -221,8 +227,8 @@ body h2 {
 }
 .ropa figure button {
   border: none;
-  background-color: rgb(156, 62, 156);
-  color: white;
+  background-color: #9c3e9c;
+  color: #f8f8f8;
   width: 80%;
   font-size: 1em;
   border-radius: 10px;
@@ -248,17 +254,17 @@ body h2 {
   padding: 20px 20px 30px 30px;
 }
 .filters a {
-  color: black;
+  color: #1d1d1d;
   font-size: 1em;
   text-decoration: none;
   margin-bottom: 4px;
 }
 .filters span {
   display: block;
-  color: black;
+  color: #1d1d1d;
   margin: 10px 0;
   letter-spacing: 1px;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 .filters li {
   list-style: none;
@@ -322,7 +328,7 @@ body h2 {
 
 .tienda .filters, .tienda2 .filters {
   grid-area: filters;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(212, 208, 245, 0.5019607843);
 }
 
 .tienda2 {
@@ -356,7 +362,7 @@ body h2 {
 
 .imgNosotros {
   padding: 15px 200px;
-  background-color: rgba(212, 208, 245, 0.5);
+  background-color: rgba(212, 208, 245, 0.5019607843);
 }
 .imgNosotros section {
   margin-top: 10px;
@@ -368,7 +374,7 @@ body h2 {
 }
 .imgNosotros p {
   padding: 10px 0 20px 20px;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .imgIzq {
@@ -415,15 +421,12 @@ body h2 {
   .ropa figure figcaption, .ropa figure p {
     margin-left: 15px;
   }
-  .ropa figure figcaption, .ropa figure p {
-    margin-left: 15px;
-  }
   .manga figure {
     width: 30%;
   }
-  .manga img {
-    width: 240px;
-    height: 335px;
+  .manga figure img {
+    width: 205px;
+    height: 285px;
   }
 }
 /* laptop "chica"*/
@@ -540,25 +543,25 @@ body h2 {
 }
 @media (max-width: 767px) {
   .btn-primary {
-    --bs-btn-bg: rgb(156, 62, 156);
-    --bs-btn-border-color: rgb(156, 62, 156);
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: rgb(156, 62, 156);
-    --bs-btn-hover-border-color: rgb(156, 62, 156);
+    --bs-btn-bg: #9c3e9c;
+    --bs-btn-border-color: #9c3e9c;
+    --bs-btn-hover-color: #f8f8f8;
+    --bs-btn-hover-bg: #9c3e9c;
+    --bs-btn-hover-border-color: #9c3e9c;
     --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: rgb(156, 62, 156);
-    --bs-btn-active-border-color: rgb(156, 62, 156);
+    --bs-btn-active-color:#f8f8f8;
+    --bs-btn-active-bg: #9c3e9c;
+    --bs-btn-active-border-color: #9c3e9c;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: rgb(156, 62, 156);
-    --bs-btn-disabled-border-color: rgb(156, 62, 156);
+    --bs-btn-disabled-color: #f8f8f8;
+    --bs-btn-disabled-bg: #9c3e9c;
+    --bs-btn-disabled-border-color: #9c3e9c;
   }
   .btnFiltersCenter {
     display: flex;
     justify-content: center;
     margin-top: 8px;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   .tienda {
     display: grid;
@@ -649,7 +652,7 @@ body h2 {
     padding: 10px;
   }
   .ropa figure figcaption, .ropa figure p {
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
   .manga figure {
     width: 45%;

@@ -13,8 +13,13 @@
     justify-content: space-around;
 }
 .bg-purple {
-    background-color: #9c3e9c;
-    color: white ;
+    @include button($color1,$white,90%,1em,10px,5px);
+
+    transition: 0.3s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 .manga {
     figure{
@@ -29,12 +34,12 @@
         padding: 20px;
 
         img{
-            width: 350px;
-            height: 491.75px;
+            width: 300px;
+            height: 415px;
             }
 
         button{
-            @include button($color1,white,80%,1em,10px,5px);
+            @include button($color1,$white,80%,1em,10px,5px);
             
             transition: 0.3s;
 
@@ -44,8 +49,8 @@
         }
 
         figcaption{
-            color: rgb(44, 42, 44);
-            font-size: 1.4em;
+            color: $black(44, 42, 44);
+            font-size: $textLg;
             padding: 10px 0;
         }
     }
@@ -64,8 +69,7 @@
         padding: 20px;
 
         button{
-            @include button($color1,white,80%,1em,10px,5px);
-    
+            @include button($color1,$white,80%,1em,10px,5px);
             transition: 0.3s;
             &:hover{
                 transform: scale(1.1);
@@ -73,8 +77,8 @@
         }
 
         figcaption{
-            color: #9c3e9c;
-            font-size: 1.4em;
+            color: $color1;
+            font-size: $textLg;
         }
     }
 }  
@@ -90,18 +94,18 @@
     padding: 20px 20px 30px 30px;
   
      a{
-        color: black;
-        font-size: 1em;
+        color: $black;
+        font-size: $textMd;
         text-decoration: none;
         margin-bottom: 4px;
     }
 
      span{
         display: block;
-        color: black;
+        color: $black;
         margin: 10px 0;
         letter-spacing: 1px;
-        font-size: 1.2em;
+        font-size: $textLg;
     }
 
      li{
@@ -174,7 +178,7 @@
 .tienda, .tienda2 {
     .filters{
         grid-area: filters;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: $grey;
     }
     }
     

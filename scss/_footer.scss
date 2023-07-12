@@ -1,5 +1,5 @@
 footer {
-    background-color: rgb(156, 62, 156);
+    background-color: $color1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,8 +18,8 @@ footer {
         li{
 
             a{
-                color: rgb(255, 255, 255);
-                font-size: 0.9em;
+                color: $white;
+                font-size:  $textMd;
                 text-decoration: none;
             }
         }

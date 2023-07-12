@@ -3,14 +3,11 @@
     flex-direction: column;
     align-items: center;
     font-weight: 600;
-    &:hover{
-        color: white;
-    }
 }
 
 body{
     nav{
-        background-color: #d4d0f5;
+        background-color: $color2;
         position: sticky;
         top: 0;
         left: 0;
@@ -23,7 +20,7 @@ body{
 
                 a{
                     text-decoration: none;
-                    color: black;                      
+                    color: $black;                      
                     font-size: 1.4em;
                 }
             }

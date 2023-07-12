@@ -1,6 +1,6 @@
 .imgNosotros{
     padding: 15px 200px;
-    background-color: rgba(212, 208, 245, 0.5);
+    background-color: $grey;
 
     section{
         margin-top: 10px;
@@ -14,7 +14,7 @@
 
     p{
         padding: 10px 0 20px 20px;
-        font-size: 1.2em;
+        font-size: $textLg;
     }
 
 }

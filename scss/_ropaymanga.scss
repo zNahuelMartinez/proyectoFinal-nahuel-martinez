@@ -16,11 +16,8 @@
     background-color: #9c3e9c;
     color: white ;
 }
-.manga img{
-    width: 350px;
-    height: 491.75px;
-}
-    .ropa figure, .manga figure {
+.manga {
+    figure{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -30,74 +27,92 @@
         border-radius: 15px;
         margin: 15px 0;
         padding: 20px;
-    }   
 
-    .ropa figure figcaption {
-        color: #9c3e9c;
-        font-size: 1.4em;
-    }
-    
-    .manga figure figcaption {
-        color: rgb(44, 42, 44);
-        font-size: 1.4em;
-        padding: 10px 0;
-    }
+        img{
+            width: 350px;
+            height: 491.75px;
+            }
 
-    .ropa figure button{
-        border: none;
-        padding: 5px 45px; 
-        font-size: 1.2em;
-        background-color: rgb(156, 62, 156);
-        border-radius: 10px;
-        color: white;
-        margin-left: 10px;
-        width: 80%;
-    }
+        button{
+            border: none;
+            padding: 5px 45px; 
+            font-size: 1.2em;
+            background-color: rgb(156, 62, 156);
+            border-radius: 10px;
+            color: white;
+            width: 80%;
+            transition: 0.3s;
 
-    .manga figure button {
-        border: none;
-        padding: 5px 45px; 
-        font-size: 1.2em;
-        background-color: rgb(156, 62, 156);
-        border-radius: 10px;
-        color: white;
-        width: 80%;
-    }
-    
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
 
-    .ropa button, .manga button{
-        transition: 0.3s;
+        figcaption{
+            color: rgb(44, 42, 44);
+            font-size: 1.4em;
+            padding: 10px 0;
+        }
     }
+}
 
-    .manga button:hover{
-            transform: scale(1.1);
-    }
-    .ropa button:hover{
-            transform: scale(1.1);
-    }
+.ropa {
+    figure{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        border: solid black 2px;
+        border-radius: 15px;
+        margin: 15px 0;
+        padding: 20px;
 
-        .instaFoto{
+        button{
+            border: none;
+            padding: 5px 45px; 
+            font-size: 1.2em;
+            background-color: rgb(156, 62, 156);
+            border-radius: 10px;
+            color: white;
+            margin-left: 10px;
+            width: 80%;
+            transition: 0.3s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        figcaption{
+            color: #9c3e9c;
+            font-size: 1.4em;
+        }
+    }
+}  
+
+.instaFoto{
         width: 300px;
         margin: 0 auto;
         display: block;
         padding: 10px;
-    }   
+}   
 
 .filters{
     padding: 20px 20px 30px 30px;
-}   
-    .filters a{
+  
+     a{
         color: black;
         font-size: 1em;
         text-decoration: none;
         margin-bottom: 4px;
     }
 
-    .filters a:hover{
+     &:hover{
         color: grey;
     }
 
-    .filters span{
+     span{
         display: block;
         color: black;
         margin: 10px 0;
@@ -105,10 +120,10 @@
         font-size: 1.2em;
     }
 
-    .filters li{
-        padding-left: 15px;
+     li{
         list-style: none;
     }
+} 
 
 .tienda {
     /* le puse tantas lineas y 
@@ -124,61 +139,61 @@
     "filters manga7 manga8 manga9"
     "filters manga10 manga11 manga12"
     "filters manga13 manga14 manga15";
+
+     .manga1{
+        grid-area: manga1;
+    }
+     .manga2{
+        grid-area: manga2;
+    }
+     .manga3{
+        grid-area: manga3;
+    }
+     .manga4{
+        grid-area: manga4;
+    }
+     .manga5{
+        grid-area: manga5;
+    }
+     .manga6{
+        grid-area: manga6;
+    }
+     .manga7{
+        grid-area: manga7;
+    }
+     .manga8{
+        grid-area: manga8;
+    }
+     .manga9{
+        grid-area: manga9;
+    }
+     .manga10{
+        grid-area: manga10;
+    }
+     .manga11{
+        grid-area: manga11;
+    }
+     .manga12{
+        grid-area: manga12;
+    }
+     .manga13{
+        grid-area: manga13;
+    }
+     .manga14{
+        grid-area: manga14;
+    }
+     .manga15{
+        grid-area: manga15;
+    }
 }
 
-.tienda .filters, .tienda2 .filters{
-    grid-area: filters;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.tienda .manga1{
-    grid-area: manga1;
-}
-.tienda .manga2{
-    grid-area: manga2;
-}
-.tienda .manga3{
-    grid-area: manga3;
-}
-.tienda .manga4{
-    grid-area: manga4;
-}
-.tienda .manga5{
-    grid-area: manga5;
-}
-.tienda .manga6{
-    grid-area: manga6;
-}
-.tienda .manga7{
-    grid-area: manga7;
-}
-.tienda .manga8{
-    grid-area: manga8;
-}
-.tienda .manga9{
-    grid-area: manga9;
-}
-.tienda .manga10{
-    grid-area: manga10;
-}
-.tienda .manga11{
-    grid-area: manga11;
-}
-.tienda .manga12{
-    grid-area: manga12;
-}
-.tienda .manga13{
-    grid-area: manga13;
-}
-.tienda .manga14{
-    grid-area: manga14;
-}
-.tienda .manga15{
-    grid-area: manga15;
-}
-
-
-
+.tienda, .tienda2 {
+    .filters{
+        grid-area: filters;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    }
+    
 .tienda2 {
     /* le puse tantas lineas y 
     pixeles porque no me coincidia el footer,
@@ -190,23 +205,25 @@
     grid-template-areas: 
     "filters remera1 remera2 remera3"
     "filters remera4 remera5 remera6";
+
+     .remera1{
+        grid-area: remera1;
+    }
+     .remera2{
+        grid-area: remera2;
+    }
+     .remera3{
+        grid-area: remera3;
+    }
+     .remera4{
+        grid-area: remera4;
+    }
+     .remera5{
+        grid-area: remera5;
+    }
+     .remera6{
+        grid-area: remera6;
+    }
 }
 
-.tienda2 .remera1{
-    grid-area: remera1;
-}
-.tienda2 .remera2{
-    grid-area: remera2;
-}
-.tienda2 .remera3{
-    grid-area: remera3;
-}
-.tienda2 .remera4{
-    grid-area: remera4;
-}
-.tienda2 .remera5{
-    grid-area: remera5;
-}
-.tienda2 .remera6{
-    grid-area: remera6;
-}
+

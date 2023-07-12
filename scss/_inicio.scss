@@ -10,12 +10,15 @@
      width:100%;
 }
 
-body h2 {
+body{
+    h2{
     text-align: center;
     background-color: rgb(156, 62, 156);
     color: aliceblue;
     font-size: 1.4em;
     margin: 0;
+    }
+    
 }
 
 .inicio{
@@ -24,11 +27,11 @@ body h2 {
     padding-bottom: 30px;
     border-radius: 15px;
     transition: 0.5s;
-}
-
-    .inicio:hover{
+    
+    &:hover{
         transform: scale(1.2);
     }
+}
 
 .p{
     padding-left: 30px;

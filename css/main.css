@@ -16,8 +16,7 @@ body {
   align-items: center;
   font-weight: 600;
 }
-
-.center a:hover {
+.center:hover {
   color: white;
 }
 
@@ -28,14 +27,12 @@ body nav {
   left: 0;
   width: 100%;
 }
-
-nav ul li {
+body nav li {
   list-style: none;
   display: inline;
   margin-right: 8px;
 }
-
-nav ul li a {
+body nav li a {
   text-decoration: none;
   color: black;
   font-size: 1.4em;
@@ -52,25 +49,21 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
 footer .svg {
   padding: 6px;
   width: 40px;
   height: 40px;
 }
-
 footer ul {
   list-style: none;
   padding: 0 10px;
   margin: 10px 0;
 }
-
 footer ul li a {
   color: rgb(255, 255, 255);
   font-size: 0.9em;
   text-decoration: none;
 }
-
 footer a {
   text-decoration: none;
 }
@@ -80,12 +73,10 @@ footer a {
   justify-content: center;
   align-items: center;
 }
-
 .icons form {
   display: flex;
   align-items: center;
 }
-
 .icons input {
   margin: 0 5px;
   padding: 6px;
@@ -93,7 +84,6 @@ footer a {
   border: none;
   background-color: rgb(243, 245, 245);
 }
-
 .icons button {
   margin: 0 5px;
   background-color: rgb(156, 62, 156);
@@ -149,7 +139,6 @@ body h2 {
   border-radius: 15px;
   transition: 0.5s;
 }
-
 .inicio:hover {
   transform: scale(1.2);
 }
@@ -185,12 +174,7 @@ body h2 {
   color: white;
 }
 
-.manga img {
-  width: 350px;
-  height: 491.75px;
-}
-
-.ropa figure, .manga figure {
+.manga figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -201,18 +185,40 @@ body h2 {
   margin: 15px 0;
   padding: 20px;
 }
-
-.ropa figure figcaption {
-  color: #9c3e9c;
-  font-size: 1.4em;
+.manga figure img {
+  width: 350px;
+  height: 491.75px;
 }
-
+.manga figure button {
+  border: none;
+  padding: 5px 45px;
+  font-size: 1.2em;
+  background-color: rgb(156, 62, 156);
+  border-radius: 10px;
+  color: white;
+  width: 80%;
+  transition: 0.3s;
+}
+.manga figure button:hover {
+  transform: scale(1.1);
+}
 .manga figure figcaption {
   color: rgb(44, 42, 44);
   font-size: 1.4em;
   padding: 10px 0;
 }
 
+.ropa figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border: solid black 2px;
+  border-radius: 15px;
+  margin: 15px 0;
+  padding: 20px;
+}
 .ropa figure button {
   border: none;
   padding: 5px 45px;
@@ -222,28 +228,14 @@ body h2 {
   color: white;
   margin-left: 10px;
   width: 80%;
-}
-
-.manga figure button {
-  border: none;
-  padding: 5px 45px;
-  font-size: 1.2em;
-  background-color: rgb(156, 62, 156);
-  border-radius: 10px;
-  color: white;
-  width: 80%;
-}
-
-.ropa button, .manga button {
   transition: 0.3s;
 }
-
-.manga button:hover {
+.ropa figure button:hover {
   transform: scale(1.1);
 }
-
-.ropa button:hover {
-  transform: scale(1.1);
+.ropa figure figcaption {
+  color: #9c3e9c;
+  font-size: 1.4em;
 }
 
 .instaFoto {
@@ -256,18 +248,15 @@ body h2 {
 .filters {
   padding: 20px 20px 30px 30px;
 }
-
 .filters a {
   color: black;
   font-size: 1em;
   text-decoration: none;
   margin-bottom: 4px;
 }
-
-.filters a:hover {
+.filters:hover {
   color: grey;
 }
-
 .filters span {
   display: block;
   color: black;
@@ -275,9 +264,7 @@ body h2 {
   letter-spacing: 1px;
   font-size: 1.2em;
 }
-
 .filters li {
-  padding-left: 15px;
   list-style: none;
 }
 
@@ -291,70 +278,55 @@ body h2 {
   gap: 5px;
   grid-template-areas: "filters manga1 manga2 manga3" "filters manga4 manga5 manga6" "filters manga7 manga8 manga9" "filters manga10 manga11 manga12" "filters manga13 manga14 manga15";
 }
+.tienda .manga1 {
+  grid-area: manga1;
+}
+.tienda .manga2 {
+  grid-area: manga2;
+}
+.tienda .manga3 {
+  grid-area: manga3;
+}
+.tienda .manga4 {
+  grid-area: manga4;
+}
+.tienda .manga5 {
+  grid-area: manga5;
+}
+.tienda .manga6 {
+  grid-area: manga6;
+}
+.tienda .manga7 {
+  grid-area: manga7;
+}
+.tienda .manga8 {
+  grid-area: manga8;
+}
+.tienda .manga9 {
+  grid-area: manga9;
+}
+.tienda .manga10 {
+  grid-area: manga10;
+}
+.tienda .manga11 {
+  grid-area: manga11;
+}
+.tienda .manga12 {
+  grid-area: manga12;
+}
+.tienda .manga13 {
+  grid-area: manga13;
+}
+.tienda .manga14 {
+  grid-area: manga14;
+}
+.tienda .manga15 {
+  grid-area: manga15;
+}
 
 .tienda .filters, .tienda2 .filters {
   grid-area: filters;
   background-color: rgba(255, 255, 255, 0.5);
-}
-
-.tienda .manga1 {
-  grid-area: manga1;
-}
-
-.tienda .manga2 {
-  grid-area: manga2;
-}
-
-.tienda .manga3 {
-  grid-area: manga3;
-}
-
-.tienda .manga4 {
-  grid-area: manga4;
-}
-
-.tienda .manga5 {
-  grid-area: manga5;
-}
-
-.tienda .manga6 {
-  grid-area: manga6;
-}
-
-.tienda .manga7 {
-  grid-area: manga7;
-}
-
-.tienda .manga8 {
-  grid-area: manga8;
-}
-
-.tienda .manga9 {
-  grid-area: manga9;
-}
-
-.tienda .manga10 {
-  grid-area: manga10;
-}
-
-.tienda .manga11 {
-  grid-area: manga11;
-}
-
-.tienda .manga12 {
-  grid-area: manga12;
-}
-
-.tienda .manga13 {
-  grid-area: manga13;
-}
-
-.tienda .manga14 {
-  grid-area: manga14;
-}
-
-.tienda .manga15 {
-  grid-area: manga15;
 }
 
 .tienda2 {
@@ -367,27 +339,21 @@ body h2 {
   gap: 5px;
   grid-template-areas: "filters remera1 remera2 remera3" "filters remera4 remera5 remera6";
 }
-
 .tienda2 .remera1 {
   grid-area: remera1;
 }
-
 .tienda2 .remera2 {
   grid-area: remera2;
 }
-
 .tienda2 .remera3 {
   grid-area: remera3;
 }
-
 .tienda2 .remera4 {
   grid-area: remera4;
 }
-
 .tienda2 .remera5 {
   grid-area: remera5;
 }
-
 .tienda2 .remera6 {
   grid-area: remera6;
 }
@@ -396,18 +362,14 @@ body h2 {
   padding: 15px 200px;
   background-color: rgba(212, 208, 245, 0.5);
 }
-
 .imgNosotros section {
   margin-top: 10px;
   border: solid black 2px;
   border-radius: 10px;
 }
-
 .imgNosotros img {
   width: 200px;
-  /* height: 200px; */
 }
-
 .imgNosotros p {
   padding: 10px 0 20px 20px;
   font-size: 1.2em;
@@ -457,6 +419,9 @@ body h2 {
   .ropa figure figcaption, .ropa figure p {
     margin-left: 15px;
   }
+  .ropa figure figcaption, .ropa figure p {
+    margin-left: 15px;
+  }
   .manga figure {
     width: 30%;
   }
@@ -476,10 +441,6 @@ body h2 {
     padding-bottom: 30px;
     border-radius: 15px;
   }
-  .inicio:hover {
-    transition: 0.5s;
-    transform: scale(1.2);
-  }
   .instaFoto {
     width: 220px;
   }
@@ -491,10 +452,7 @@ body h2 {
     width: 250px;
     height: 250px;
   }
-  .imgSize {
-    margin-right: 10px;
-  }
-  .ropa figure button, .manga figure button {
+  .ropa figure button {
     font-size: 0.8em;
     width: 90%;
   }
@@ -502,9 +460,16 @@ body h2 {
     margin-left: 22px;
     font-size: 1em;
   }
-  .manga img {
+  .imgSize {
+    margin-right: 10px;
+  }
+  .manga figure img {
     width: 190px;
     height: 265px;
+  }
+  .manga figure button {
+    font-size: 0.8em;
+    width: 90%;
   }
   .manga figure figcaption, .manga figure h4 {
     margin-left: 0;
@@ -514,6 +479,9 @@ body h2 {
 /* menos que laptop (tablet) */
 @media (max-width: 992px) {
   .none {
+    display: none;
+  }
+  .noneTablet {
     display: none;
   }
   /* INICIO */
@@ -548,6 +516,10 @@ body h2 {
     width: 45%;
     padding-left: 0px;
   }
+  .ropa figure img {
+    width: 250px;
+    height: 250px;
+  }
   .ropa figure button {
     margin-left: 18px;
   }
@@ -571,6 +543,133 @@ body h2 {
   }
 }
 @media (max-width: 767px) {
+  .btn-primary {
+    --bs-btn-bg: rgb(156, 62, 156);
+    --bs-btn-border-color: rgb(156, 62, 156);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgb(156, 62, 156);
+    --bs-btn-hover-border-color: rgb(156, 62, 156);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgb(156, 62, 156);
+    --bs-btn-active-border-color: rgb(156, 62, 156);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: rgb(156, 62, 156);
+    --bs-btn-disabled-border-color: rgb(156, 62, 156);
+  }
+  .btnFiltersCenter {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    font-size: 0.9em;
+  }
+  .tienda {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: " manga1 manga2 " " manga3 manga4 " " manga5 manga6 " " manga7 manga8 " " manga9 manga10 " " manga11 manga12 " " manga13 manga14 ";
+  }
+  .tienda .manga1 {
+    grid-area: manga1;
+  }
+  .tienda .manga2 {
+    grid-area: manga2;
+  }
+  .tienda .manga3 {
+    grid-area: manga3;
+  }
+  .tienda .manga4 {
+    grid-area: manga4;
+  }
+  .tienda .manga5 {
+    grid-area: manga5;
+  }
+  .tienda .manga6 {
+    grid-area: manga6;
+  }
+  .tienda .manga7 {
+    grid-area: manga7;
+  }
+  .tienda .manga8 {
+    grid-area: manga8;
+  }
+  .tienda .manga9 {
+    grid-area: manga9;
+  }
+  .tienda .manga10 {
+    grid-area: manga10;
+  }
+  .tienda .manga11 {
+    grid-area: manga11;
+  }
+  .tienda .manga12 {
+    grid-area: manga12;
+  }
+  .tienda .manga13 {
+    grid-area: manga13;
+  }
+  .tienda .manga14 {
+    grid-area: manga14;
+  }
+  .tienda .manga15 {
+    grid-area: manga15;
+  }
+  .tienda2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: " remera1 remera2 " " remera3 remera4 " " remera5 remera6 ";
+  }
+  .tienda2 .remera1 {
+    grid-area: remera1;
+  }
+  .tienda2 .remera2 {
+    grid-area: remera2;
+  }
+  .tienda2 .remera3 {
+    grid-area: remera3;
+  }
+  .tienda2 .remera4 {
+    grid-area: remera4;
+  }
+  .tienda2 .remera5 {
+    grid-area: remera5;
+  }
+  .tienda2 .remera6 {
+    grid-area: remera6;
+  }
+  .displayNone {
+    display: none;
+  }
+  .ropa figure {
+    width: 45%;
+  }
+  .ropa figure img {
+    width: 170px;
+    height: 170px;
+  }
+  .ropa figure button {
+    font-size: 0.6em;
+    width: 65%;
+    padding: 10px;
+  }
+  .ropa figure figcaption, .ropa figure p {
+    font-size: 0.7em;
+  }
+  .manga figure {
+    width: 45%;
+  }
+  .manga figure img {
+    width: 125px;
+    height: 155px;
+  }
+  .manga figure button {
+    font-size: 0.6em;
+    width: 65%;
+    padding: 10px;
+  }
+  .manga figure figcaption, .manga figure h4 {
+    font-size: 1em;
+  }
   .imgNosotros {
     padding: 0px;
   }

@@ -2,14 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-    .icons form {
+    
+    form{
         display: flex;
         align-items: center;
     }
-    
-    .icons input{
+
+    input{
         margin: 0 5px;
         padding: 6px;
         border-radius: 10px;
@@ -17,13 +16,14 @@
         background-color: rgb(243, 245, 245);
     }
 
-    .icons button{
+    button{
         margin: 0 5px;
         background-color: rgb(156, 62, 156);
         padding: 6px;
         border: none;
         border-radius: 3px;
     }
+}
 
     .iconsG{
         justify-content: center;

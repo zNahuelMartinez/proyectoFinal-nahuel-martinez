@@ -81,7 +81,7 @@ footer a {
   border: none;
   background-color: #f8f8f8;
 }
-.icons button {
+.icons .iconsLinks {
   margin: 0 5px;
   background-color: #9c3e9c;
   padding: 6px;
@@ -121,12 +121,32 @@ footer a {
   width: 100%;
 }
 
-body h2 {
+@keyframes animation {
+  0% {
+    background-color: #5D185B;
+  }
+  25% {
+    background-color: #9c3e9c;
+  }
+  50% {
+    background-color: #B569CC;
+  }
+  75% {
+    background-color: #9c3e9c;
+  }
+  100% {
+    background-color: #5D185B;
+  }
+}
+.sendFree {
   text-align: center;
   background-color: #9c3e9c;
   color: #f8f8f8;
   font-size: 1.4em;
   margin: 0;
+  animation-name: animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 .inicio {
@@ -678,6 +698,32 @@ body h2 {
   .inicio {
     width: 300px;
   }
+}
+.center404 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.error404 {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button404 {
+  border: none;
+  background-color: #9c3e9c;
+  color: #f8f8f8;
+  width: 90%;
+  font-size: 1em;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

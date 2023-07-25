@@ -10,15 +10,23 @@
      width:100%;
 }
 
-body{
-    h2{
+@keyframes animation{
+    0%{background-color: #5D185B;}
+    25%{background-color: $color1;}
+    50%{background-color: #B569CC;}
+    75%{background-color: $color1;}
+    100%{background-color: #5D185B;}
+}
+.sendFree{
     text-align: center;
     background-color: $color1;
     color: $white;
     font-size: $textLg;
     margin: 0;
-    }
-    
+
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .inicio{

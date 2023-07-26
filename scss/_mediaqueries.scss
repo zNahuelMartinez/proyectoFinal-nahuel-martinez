@@ -11,7 +11,7 @@
 /* laptop L */
 @media(max-width:1440px){
 
-    .inicio{
+    .start{
         width: 400px;
         padding-left: 30px;
         padding-bottom: 30px;
@@ -23,7 +23,7 @@
         }
     }
 
-    .ropa{
+    .clothes{
         figure{
         width: 30%;
         padding-left: 0px;
@@ -58,21 +58,21 @@
 /* laptop "chica"*/
 @media(max-width:1200px){
 
-    .iconoLaptop{
+    .iconLaptop{
         width: 120px;
     }
 
-    .inicio{
+    .start{
         width: 320px;
         padding-left: 30px;
         padding-bottom: 30px;
         border-radius: 15px;
     }
 
-    .instaFoto{
+    .instaPic{
         width: 220px;
     }
-    .ropa{
+    .clothes{
         figure{
         width: 30%;
         padding-left: 0px;
@@ -130,7 +130,7 @@
     }
 
     /* INICIO */
-    .inicio{
+    .start{
         width: 400px;
         padding-left: 30px;
         padding-bottom: 30px;
@@ -145,7 +145,7 @@
         }
 
     /* FORMULARIO */
-    .mapaForm{
+    .mapForm{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -157,14 +157,14 @@
     }
 
     /* ROPA Y MANGA */
-    .tienda2, .tienda{
+    .store2, .store{
         .filters{
             padding-left: 12px;
             padding-right: 5px;
         }
     }
 
-    .ropa{
+    .clothes{
         figure{
             width: 45%;
             padding-left: 0px;
@@ -190,18 +190,18 @@
         }
     }
 
-    .tienda .filters{
+    .store .filters{
         padding-left: 5px;
     }
 
     /* NOSOTROS */
-    .imgArriba{
+    .imgTop{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .imgNosotros{
+    .imgUs{
         padding: 15px 100px;
     }
 
@@ -234,7 +234,7 @@
         font-size: $textSm;
 
     }
-    .tienda {
+    .store {
         display: grid;
         grid-template-columns: 100% ;
         grid-template-areas: 
@@ -293,7 +293,7 @@
         }
     }
     
-    .tienda2 {
+    .store2 {
         display: grid;
         grid-template-columns: 100% ;
         grid-template-areas: 
@@ -301,22 +301,22 @@
         " remera3 remera4 "
         " remera5 remera6 ";
 
-         .remera1{
+         .tshirt1{
             grid-area: remera1;
         }
-         .remera2{
+         .tshirt2{
             grid-area: remera2;
         }
-         .remera3{
+         .tshirt3{
             grid-area: remera3;
         }
-         .remera4{
+         .tshirt4{
             grid-area: remera4;
         }
-         .remera5{
+         .tshirt5{
             grid-area: remera5;
         }
-         .remera6{
+         .tshirt6{
             grid-area: remera6;
         }
     }
@@ -325,7 +325,7 @@
         display: none;
     }
 
-    .ropa{
+    .clothes{
         figure{
         width: 45%;
             img{
@@ -361,14 +361,14 @@
         }
     }
 
-    .imgNosotros{
+    .imgUs{
         padding: 0px;
     }
 }
 
 /* celulares */
 @media(max-width:400px) and (min-width:320px){
-    .inicio{
+    .start{
         width: 300px;
         
     }

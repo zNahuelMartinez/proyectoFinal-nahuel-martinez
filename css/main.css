@@ -45,6 +45,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation-name: animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 footer .svg {
   padding: 6px;
@@ -65,6 +68,23 @@ footer a {
   text-decoration: none;
 }
 
+@keyframes animation {
+  0% {
+    background-color: #5D185B;
+  }
+  25% {
+    background-color: #9c3e9c;
+  }
+  50% {
+    background-color: #B569CC;
+  }
+  75% {
+    background-color: #9c3e9c;
+  }
+  100% {
+    background-color: #5D185B;
+  }
+}
 .icons {
   display: flex;
   justify-content: center;
@@ -97,23 +117,23 @@ footer a {
   grid-template-areas: "buscar icono carrito";
 }
 
-.buscarG {
+.searchG {
   grid-area: buscar;
 }
 
-.iconoG {
+.iconG {
   grid-area: icono;
 }
 
-.carritoG {
+.cartG {
   grid-area: carrito;
 }
 
-.icono {
+.icon {
   width: 150px;
 }
 
-.iconoH {
+.iconH {
   width: 65px;
 }
 
@@ -149,14 +169,14 @@ footer a {
   animation-iteration-count: infinite;
 }
 
-.inicio {
+.start {
   width: 500px;
   padding-left: 30px;
   padding-bottom: 30px;
   border-radius: 15px;
   transition: 0.5s;
 }
-.inicio:hover {
+.start:hover {
   transform: scale(1.2);
 }
 
@@ -180,7 +200,7 @@ footer a {
   margin-right: 30px;
 }
 
-.ropa, .manga {
+.clothes, .manga {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -234,7 +254,7 @@ footer a {
   padding: 10px 0;
 }
 
-.ropa figure {
+.clothes figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,7 +265,7 @@ footer a {
   margin: 15px 0;
   padding: 20px;
 }
-.ropa figure button {
+.clothes figure button {
   border: none;
   background-color: #9c3e9c;
   color: #f8f8f8;
@@ -255,15 +275,15 @@ footer a {
   padding: 5px;
   transition: 0.3s;
 }
-.ropa figure button:hover {
+.clothes figure button:hover {
   transform: scale(1.1);
 }
-.ropa figure figcaption {
+.clothes figure figcaption {
   color: #9c3e9c;
   font-size: 1.4em;
 }
 
-.instaFoto {
+.instaPic {
   width: 300px;
   margin: 0 auto;
   display: block;
@@ -290,7 +310,7 @@ footer a {
   list-style: none;
 }
 
-.tienda {
+.store {
   /* le puse tantas lineas y 
   pixeles porque no me coincidia el footer,
   espero encontrar la forma de arreglarlo */
@@ -300,58 +320,58 @@ footer a {
   gap: 5px;
   grid-template-areas: "filters manga1 manga2 manga3" "filters manga4 manga5 manga6" "filters manga7 manga8 manga9" "filters manga10 manga11 manga12" "filters manga13 manga14 manga15";
 }
-.tienda .manga1 {
+.store .manga1 {
   grid-area: manga1;
 }
-.tienda .manga2 {
+.store .manga2 {
   grid-area: manga2;
 }
-.tienda .manga3 {
+.store .manga3 {
   grid-area: manga3;
 }
-.tienda .manga4 {
+.store .manga4 {
   grid-area: manga4;
 }
-.tienda .manga5 {
+.store .manga5 {
   grid-area: manga5;
 }
-.tienda .manga6 {
+.store .manga6 {
   grid-area: manga6;
 }
-.tienda .manga7 {
+.store .manga7 {
   grid-area: manga7;
 }
-.tienda .manga8 {
+.store .manga8 {
   grid-area: manga8;
 }
-.tienda .manga9 {
+.store .manga9 {
   grid-area: manga9;
 }
-.tienda .manga10 {
+.store .manga10 {
   grid-area: manga10;
 }
-.tienda .manga11 {
+.store .manga11 {
   grid-area: manga11;
 }
-.tienda .manga12 {
+.store .manga12 {
   grid-area: manga12;
 }
-.tienda .manga13 {
+.store .manga13 {
   grid-area: manga13;
 }
-.tienda .manga14 {
+.store .manga14 {
   grid-area: manga14;
 }
-.tienda .manga15 {
+.store .manga15 {
   grid-area: manga15;
 }
 
-.tienda .filters, .tienda2 .filters {
+.store .filters, .store2 .filters {
   grid-area: filters;
   background-color: rgba(212, 208, 245, 0.5019607843);
 }
 
-.tienda2 {
+.store2 {
   /* le puse tantas lineas y 
   pixeles porque no me coincidia el footer,
   espero encontrar la forma de arreglarlo */
@@ -361,49 +381,49 @@ footer a {
   gap: 5px;
   grid-template-areas: "filters remera1 remera2 remera3" "filters remera4 remera5 remera6";
 }
-.tienda2 .remera1 {
+.store2 .tshirt1 {
   grid-area: remera1;
 }
-.tienda2 .remera2 {
+.store2 .tshirt2 {
   grid-area: remera2;
 }
-.tienda2 .remera3 {
+.store2 .tshirt3 {
   grid-area: remera3;
 }
-.tienda2 .remera4 {
+.store2 .tshirt4 {
   grid-area: remera4;
 }
-.tienda2 .remera5 {
+.store2 .tshirt5 {
   grid-area: remera5;
 }
-.tienda2 .remera6 {
+.store2 .tshirt6 {
   grid-area: remera6;
 }
 
-.imgNosotros {
+.imgUs {
   padding: 15px 200px;
   background-color: rgba(212, 208, 245, 0.5019607843);
 }
-.imgNosotros section {
+.imgUs section {
   margin-top: 10px;
   border: solid black 2px;
   border-radius: 10px;
 }
-.imgNosotros img {
+.imgUs img {
   width: 200px;
 }
-.imgNosotros p {
+.imgUs p {
   padding: 10px 0 20px 20px;
   font-size: 1.4em;
 }
 
-.imgIzq {
+.imgLeft {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.imgDer {
+.imgRight {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -417,28 +437,28 @@ footer a {
 }
 /* laptop L */
 @media (max-width: 1440px) {
-  .inicio {
+  .start {
     width: 400px;
     padding-left: 30px;
     padding-bottom: 30px;
     border-radius: 15px;
   }
-  .inicio:hover {
+  .start:hover {
     transition: 0.5s;
     transform: scale(1.2);
   }
-  .ropa figure {
+  .clothes figure {
     width: 30%;
     padding-left: 0px;
   }
-  .ropa figure img {
+  .clothes figure img {
     width: 330px;
     height: 330px;
   }
-  .ropa figure button {
+  .clothes figure button {
     margin-left: 20px;
   }
-  .ropa figure figcaption, .ropa figure p {
+  .clothes figure figcaption, .clothes figure p {
     margin-left: 15px;
   }
   .manga figure {
@@ -451,31 +471,31 @@ footer a {
 }
 /* laptop "chica"*/
 @media (max-width: 1200px) {
-  .iconoLaptop {
+  .iconLaptop {
     width: 120px;
   }
-  .inicio {
+  .start {
     width: 320px;
     padding-left: 30px;
     padding-bottom: 30px;
     border-radius: 15px;
   }
-  .instaFoto {
+  .instaPic {
     width: 220px;
   }
-  .ropa figure {
+  .clothes figure {
     width: 30%;
     padding-left: 0px;
   }
-  .ropa figure img {
+  .clothes figure img {
     width: 250px;
     height: 250px;
   }
-  .ropa figure button {
+  .clothes figure button {
     font-size: 0.8em;
     width: 90%;
   }
-  .ropa figure figcaption, .ropa figure p {
+  .clothes figure figcaption, .clothes figure p {
     margin-left: 22px;
     font-size: 1em;
   }
@@ -504,7 +524,7 @@ footer a {
     display: none;
   }
   /* INICIO */
-  .inicio {
+  .start {
     width: 400px;
     padding-left: 30px;
     padding-bottom: 30px;
@@ -517,7 +537,7 @@ footer a {
     width: 100%;
   }
   /* FORMULARIO */
-  .mapaForm {
+  .mapForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -527,19 +547,19 @@ footer a {
     margin-bottom: 35px;
   }
   /* ROPA Y MANGA */
-  .tienda2 .filters, .tienda .filters {
+  .store2 .filters, .store .filters {
     padding-left: 12px;
     padding-right: 5px;
   }
-  .ropa figure {
+  .clothes figure {
     width: 45%;
     padding-left: 0px;
   }
-  .ropa figure img {
+  .clothes figure img {
     width: 250px;
     height: 250px;
   }
-  .ropa figure button {
+  .clothes figure button {
     margin-left: 18px;
   }
   .imgSize {
@@ -548,16 +568,16 @@ footer a {
   .manga figure {
     width: 45%;
   }
-  .tienda .filters {
+  .store .filters {
     padding-left: 5px;
   }
   /* NOSOTROS */
-  .imgArriba {
+  .imgTop {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .imgNosotros {
+  .imgUs {
     padding: 15px 100px;
   }
 }
@@ -583,95 +603,95 @@ footer a {
     margin-top: 8px;
     font-size: 0.8em;
   }
-  .tienda {
+  .store {
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas: " manga1 manga2 " " manga3 manga4 " " manga5 manga6 " " manga7 manga8 " " manga9 manga10 " " manga11 manga12 " " manga13 manga14 ";
   }
-  .tienda .manga1 {
+  .store .manga1 {
     grid-area: manga1;
   }
-  .tienda .manga2 {
+  .store .manga2 {
     grid-area: manga2;
   }
-  .tienda .manga3 {
+  .store .manga3 {
     grid-area: manga3;
   }
-  .tienda .manga4 {
+  .store .manga4 {
     grid-area: manga4;
   }
-  .tienda .manga5 {
+  .store .manga5 {
     grid-area: manga5;
   }
-  .tienda .manga6 {
+  .store .manga6 {
     grid-area: manga6;
   }
-  .tienda .manga7 {
+  .store .manga7 {
     grid-area: manga7;
   }
-  .tienda .manga8 {
+  .store .manga8 {
     grid-area: manga8;
   }
-  .tienda .manga9 {
+  .store .manga9 {
     grid-area: manga9;
   }
-  .tienda .manga10 {
+  .store .manga10 {
     grid-area: manga10;
   }
-  .tienda .manga11 {
+  .store .manga11 {
     grid-area: manga11;
   }
-  .tienda .manga12 {
+  .store .manga12 {
     grid-area: manga12;
   }
-  .tienda .manga13 {
+  .store .manga13 {
     grid-area: manga13;
   }
-  .tienda .manga14 {
+  .store .manga14 {
     grid-area: manga14;
   }
-  .tienda .manga15 {
+  .store .manga15 {
     grid-area: manga15;
   }
-  .tienda2 {
+  .store2 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas: " remera1 remera2 " " remera3 remera4 " " remera5 remera6 ";
   }
-  .tienda2 .remera1 {
+  .store2 .tshirt1 {
     grid-area: remera1;
   }
-  .tienda2 .remera2 {
+  .store2 .tshirt2 {
     grid-area: remera2;
   }
-  .tienda2 .remera3 {
+  .store2 .tshirt3 {
     grid-area: remera3;
   }
-  .tienda2 .remera4 {
+  .store2 .tshirt4 {
     grid-area: remera4;
   }
-  .tienda2 .remera5 {
+  .store2 .tshirt5 {
     grid-area: remera5;
   }
-  .tienda2 .remera6 {
+  .store2 .tshirt6 {
     grid-area: remera6;
   }
   .displayNone {
     display: none;
   }
-  .ropa figure {
+  .clothes figure {
     width: 45%;
   }
-  .ropa figure img {
+  .clothes figure img {
     width: 170px;
     height: 170px;
   }
-  .ropa figure button {
+  .clothes figure button {
     font-size: 0.6em;
     width: 65%;
     padding: 10px;
   }
-  .ropa figure figcaption, .ropa figure p {
+  .clothes figure figcaption, .clothes figure p {
     font-size: 0.6em;
   }
   .manga figure {
@@ -689,13 +709,13 @@ footer a {
   .manga figure figcaption, .manga figure h4 {
     font-size: 1em;
   }
-  .imgNosotros {
+  .imgUs {
     padding: 0px;
   }
 }
 /* celulares */
 @media (max-width: 400px) and (min-width: 320px) {
-  .inicio {
+  .start {
     width: 300px;
   }
 }

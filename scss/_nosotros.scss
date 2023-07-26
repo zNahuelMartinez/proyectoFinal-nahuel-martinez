@@ -1,4 +1,4 @@
-.imgNosotros{
+.imgUs{
     padding: 15px 200px;
     background-color: $grey;
 
@@ -19,13 +19,13 @@
 
 }
 
-.imgIzq{
+.imgLeft{
     display: flex;
     flex-direction: row;
     align-items: center;    
 }
 
-.imgDer{
+.imgRight{
     display: flex;
     flex-direction: row-reverse;
     align-items: center; 

@@ -4,6 +4,10 @@ footer {
     justify-content: space-between;
     align-items: center;
 
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
     .svg{
         padding: 6px;
         width: 40px;
@@ -30,4 +34,11 @@ footer {
     }
 }
 
+@keyframes animation{
+    0%{background-color: #5D185B;}
+    25%{background-color: $color1;}
+    50%{background-color: #B569CC;}
+    75%{background-color: $color1;}
+    100%{background-color: #5D185B;}
+}
 

@@ -7,7 +7,7 @@
 
 }
 
-.ropa, .manga {
+.clothes, .manga {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -56,7 +56,7 @@
     }
 }
 
-.ropa {
+.clothes {
     figure{
         display: flex;
         flex-direction: column;
@@ -83,7 +83,7 @@
     }
 }  
 
-.instaFoto{
+.instaPic{
         width: 300px;
         margin: 0 auto;
         display: block;
@@ -113,7 +113,7 @@
     }
 } 
 
-.tienda {
+.store  {
     /* le puse tantas lineas y 
     pixeles porque no me coincidia el footer,
     espero encontrar la forma de arreglarlo */
@@ -175,14 +175,14 @@
     }
 }
 
-.tienda, .tienda2 {
+.store, .store2 {
     .filters{
         grid-area: filters;
         background-color: $grey;
     }
     }
     
-.tienda2 {
+.store2 {
     /* le puse tantas lineas y 
     pixeles porque no me coincidia el footer,
     espero encontrar la forma de arreglarlo */
@@ -194,22 +194,22 @@
     "filters remera1 remera2 remera3"
     "filters remera4 remera5 remera6";
 
-     .remera1{
+     .tshirt1{
         grid-area: remera1;
     }
-     .remera2{
+     .tshirt2{
         grid-area: remera2;
     }
-     .remera3{
+     .tshirt3{
         grid-area: remera3;
     }
-     .remera4{
+     .tshirt4{
         grid-area: remera4;
     }
-     .remera5{
+     .tshirt5{
         grid-area: remera5;
     }
-     .remera6{
+     .tshirt6{
         grid-area: remera6;
     }
 }

@@ -24,4 +24,3 @@ Link pages: https://znahuelmartinez.github.io/preEntrega-nahuel-martinez/index.h
 Dominio Vercel: 
 
 Gracias por leerme!.
-
